@@ -38,6 +38,7 @@
 
                     <div class="row gy-0 gx-4 justify-content-between pb-4">
                         <div class="col-lg-6">
+                            <p class="text-dark">Project Status: {{ $project->status }}</p>
                             <p class="text-dark">Location: {{ $project->location }}</p>
                             {{-- <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Trained Employees</p> --}}
                         </div>

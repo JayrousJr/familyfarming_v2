@@ -36,7 +36,7 @@ class RoutingController extends Controller
     function project()
     {
         $data['service'] = Service::all();
-        $data['project'] = Project::all();
+        $data['project'] = Project::latest()->get();
         return view('website.project', $data);
     }
     function single_service($service)
