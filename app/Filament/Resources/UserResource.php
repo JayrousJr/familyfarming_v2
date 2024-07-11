@@ -35,6 +35,7 @@ class UserResource extends Resource
                     ->required(fn(string $operation): bool => $operation === 'create')
                     ->maxLength(255),
                     Forms\Components\Select::make('position')
+                    ->searchable()
                     ->options([
                         "Director"=>"Director",
                         'Manager'=>"Manager",
@@ -74,7 +75,8 @@ class UserResource extends Resource
                     ->label('Profile Image')
                     ->circular()
                     ->searchable(),
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('position')
+                    ->searchable(), Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
