@@ -25,6 +25,7 @@
                     <p class="mb-0">send a message and we will get to you ASAP</p>
                 </div>
                 <form action={{route("processing")}} method="post">
+                    @csrf
                     <div class="row g-3">
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating border border-secondary">
