@@ -12,7 +12,7 @@ class Project extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable = ['location','name','image','description', 'service_id'];
+    protected $fillable = ['location','name','image','description', 'service_id',"status"];
     public function project() : BelongsTo{
         return $this->belongsTo(Service::class, 'service_id');
     }

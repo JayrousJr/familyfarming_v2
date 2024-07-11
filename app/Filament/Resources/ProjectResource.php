@@ -38,7 +38,18 @@ class ProjectResource extends Resource
                     Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                    Forms\Components\TextInput::make('location')
+                Forms\Components\Select::make('status')
+                    ->label("Project Status")
+                    ->required()
+                    ->options([
+                        "Last Stage To Complete"=>"Last Stage To Complete",
+                        "First Stage To Complete"=>"First Stage To Complete",
+                        "Started"=>"Started",
+                        "Completed"=>"Completed",
+                        "Pending"=>"Pending",
+                        "Canceled"=>"Canceled",
+                    ]),
+                Forms\Components\TextInput::make('location')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
@@ -55,11 +66,12 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('project.name')
                 ->label("Project Category")
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image'),
-                
+                Tables\Columns\TextColumn::make('status')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

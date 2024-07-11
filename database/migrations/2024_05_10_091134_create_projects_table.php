@@ -18,6 +18,7 @@ return new class extends Migration
             $table->longText("description");
             $table->String("name");
             $table->String("location");
+            $table->String("status");
             $table->timestamps();
             $table->softDeletes();
         });
