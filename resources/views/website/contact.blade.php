@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating border border-secondary">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                <textarea class="form-control" placeholder="Leave a message here" name="message"
                                     style="height: 160px">  {{ old('message') }}</textarea>
                                 <label for="message">Message</label>
                                 @error('message')
