@@ -12,7 +12,7 @@ Route::get('project',[RoutingController::class,'project'])->name('project');
 Route::get('service/Ai88LKJSFI{service}HKJI74987',[RoutingController::class,'single_Service'])->name('ss');
 Route::get('project/pro{project}HKJI74987',[RoutingController::class,'project_single'])->name('ps');
 
-Route::post('/processing', [MessageController::class, 'message'])->name("processing");
+Route::post('processing', [MessageController::class, 'message'])->name("processing");
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

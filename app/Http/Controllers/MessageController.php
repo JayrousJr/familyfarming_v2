@@ -48,6 +48,6 @@ class MessageController extends Controller
         Mail::to($emailto)->send(new MessageSent($message));
 
         session()->flash('message', 'Congratulation Message sent successiful!');
-        return redirect()->route("contact");
+        return redirect()->route("home");
     }
 }
