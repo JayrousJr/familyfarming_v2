@@ -54,7 +54,7 @@
                         <div class="col-12">
                             <div class="form-floating border border-secondary">
                                 <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 160px">  {{ old('name') }}</textarea>
+                                    style="height: 160px">  {{ old('message') }}</textarea>
                                 <label for="message">Message</label>
                                 @error('message')
                                 <span class="invalid-feedback" role="alert">
