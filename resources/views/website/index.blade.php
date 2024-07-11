@@ -1,6 +1,6 @@
 @include("website.includes.header")
 @if(session('message'))
-<div class="alert alert-success" id="notification">
+<div class="alert alert-success" style="width:50%; margin:0 auto" id="notification">
     {{session('message')}}
 </div>
 @endif
