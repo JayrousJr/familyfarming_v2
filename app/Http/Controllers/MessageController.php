@@ -35,9 +35,7 @@ class MessageController extends Controller
         //creating the object message of the class Model Message
         $message = new Contact();
         //sending the data to the database 
-        $message->firstname = request()->firstname;
-        $message->lastname = request()->lastname;
-        $message->subject = request()->subject;
+        $message->name = request()->name;
         $message->email = request()->email;
         $message->message = request()->message;
 

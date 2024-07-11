@@ -36,16 +36,6 @@
                     <a href=""><i class="fas fa-envelope me-2"></i> 0info@familyfarmingltd.com</a>
                     <a href=""><i class="fas fa-phone me-2"></i> +255 753 901 549</a>
                     <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +255 754 219 539</a>
-                    <!-- <div class="footer-btn d-flex align-items-center">
-                        <a class="btn btn-secondary btn-md-square me-2" href=""><i
-                                class="fab fa-facebook-f text-white"></i></a>
-                        <a class="btn btn-secondary btn-md-square me-2" href=""><i
-                                class="fab fa-twitter text-white"></i></a>
-                        <a class="btn btn-secondary btn-md-square me-2" href=""><i
-                                class="fab fa-instagram text-white"></i></a>
-                        <a class="btn btn-secondary btn-md-square me-0" href=""><i
-                                class="fab fa-linkedin-in text-white"></i></a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -89,6 +79,14 @@
 
 <!-- Template Javascript -->
 <script src="/assets/js/main.js"></script>
+<script>
+$(document).ready(function() {
+    //hide the notification after 2seconds 
+    setTimeout(function() {
+        $("#notification").fadeOut('slow');
+    }, 3000);
+});
+</script>
 </body>
 
 </html>

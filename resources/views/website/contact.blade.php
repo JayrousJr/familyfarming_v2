@@ -1,5 +1,9 @@
 @include("website.includes.header")
-
+@if(session('message'))
+<div class="alert alert-success" id="notification">
+    {{session('message')}}
+</div>
+@endif
 <!-- Header Start -->
 <div class="container-fluid bg-breadcrumb"
     style=" background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(/assets/img/about-3.jpg); background-position: center center;">
