@@ -22,9 +22,7 @@
                 <div class="text-center mx-auto pb-5" style="max-width: 800px;">
                     <p class="text-uppercase text-secondary fs-5 mb-0">Let’s Connect</p>
                     <h2 class="display-4 text-capitalize mb-3">Send Your Message</h2>
-                    <p class="mb-0">The contact form is currently inactive. Get a functional and working contact form
-                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                        done. </p>
+                    <p class="mb-0">send a message and we will get to you ASAP</p>
                 </div>
                 <form>
                     <div class="row g-3">
@@ -85,7 +83,7 @@
                     <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                     <div>
                         <h4>Address</h4>
-                        <p class="mb-0">123 North tower New York, USA</p>
+                        <p class="mb-0">Morogoro, Tanzania</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +92,7 @@
                     <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
                     <div>
                         <h4>Mail Us</h4>
-                        <p class="mb-0">info@example.com</p>
+                        <p class="mb-0">info@familyfarmingltd.com</p>
                     </div>
                 </div>
             </div>
@@ -103,7 +101,7 @@
                     <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
                     <div>
                         <h4>Telephone</h4>
-                        <p class="mb-0">(+012) 3456 7890 123</p>
+                        <p class="mb-0">(+255) 753 901 549</p>
                     </div>
                 </div>
             </div>
