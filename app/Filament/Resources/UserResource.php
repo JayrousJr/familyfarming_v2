@@ -34,6 +34,13 @@ class UserResource extends Resource
                     ->dehydrated(fn(?string $state): bool => filled($state))
                     ->required(fn(string $operation): bool => $operation === 'create')
                     ->maxLength(255),
+                    Forms\Components\Select::make('position')
+                    ->options([
+                        "Director"=>"Director",
+                        'Manager'=>"Manager",
+                        "Supervisor"=>"Supervisor",
+                        "Accountant"=>"Accountant"
+                    ]),
                 Forms\Components\TextInput::make('email')
                     ->email()
                     ->dehydrated(fn(?string $state): bool => filled($state))
