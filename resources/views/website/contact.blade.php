@@ -24,43 +24,42 @@
                     <h2 class="display-4 text-capitalize mb-3">Send Your Message</h2>
                     <p class="mb-0">send a message and we will get to you ASAP</p>
                 </div>
-                <form>
+                <form action={{route("processing")}} method="post">
                     <div class="row g-3">
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating border border-secondary">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name"
+                                    value="{{ old('name') }}">
                                 <label for="name">Your Name</label>
+                                @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating border border-secondary">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                    value="{{ old('email') }}">
                                 <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-xl-6">
-                            <div class="form-floating border border-secondary">
-                                <input type="phone" class="form-control" id="phone" placeholder="Phone">
-                                <label for="phone">Your Phone</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-xl-6">
-                            <div class="form-floating border border-secondary">
-                                <input type="text" class="form-control" id="project" placeholder="Project">
-                                <label for="project">Your Project</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating border border-secondary">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                <label for="subject">Subject</label>
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating border border-secondary">
                                 <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 160px"></textarea>
+                                    style="height: 160px">  {{ old('name') }}</textarea>
                                 <label for="message">Message</label>
+                                @error('message')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-12">

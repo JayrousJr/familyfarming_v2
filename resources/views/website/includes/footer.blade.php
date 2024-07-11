@@ -5,7 +5,7 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <div class="footer-item">
-                        <h4 class="text-white mb-4">About fa-users</h4>
+                        <h4 class="text-white mb-4">About Family Farming</h4>
                         <p class="mb-3">We are a multi purpose company dealing with Building Construction,
                             Transportation and Agriculture</p>
                     </div>
@@ -33,8 +33,8 @@
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4">Contact Info</h4>
                     <a href=""><i class="fa fa-map-marker-alt me-2"></i> St Morogoro, Tanzania</a>
-                    <a href=""><i class="fas fa-envelope me-2"></i> info@familyfarmingltd.com</a>
-                    <a href=""><i class="fas fa-phone me-2"></i> +255 753 901 539</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> 0info@familyfarmingltd.com</a>
+                    <a href=""><i class="fas fa-phone me-2"></i> +255 753 901 549</a>
                     <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +255 754 219 539</a>
                     <!-- <div class="footer-btn d-flex align-items-center">
                         <a class="btn btn-secondary btn-md-square me-2" href=""><i
