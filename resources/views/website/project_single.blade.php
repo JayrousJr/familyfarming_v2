@@ -42,7 +42,7 @@
                                     style="font-weight: 800;">{{ $project->status }}</span>
                             </p>
                             <p class="text-dark">Location: <span
-                                    class="font-weight: 800;">{{ $project->location }}</span></p>
+                                    style="font-weight: 800;">{{ $project->location }}</span> </p>
                             {{-- <p class="text-dark"><i class="fas fa-check text-secondary me-1"></i> Trained Employees</p> --}}
                         </div>
                     </div>
