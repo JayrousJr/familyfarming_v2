@@ -41,6 +41,7 @@ class ProjectResource extends Resource
                 Forms\Components\Select::make('status')
                     ->label("Project Status")
                     ->required()
+                    ->searchable()
                     ->options([
                         "Last Stage To Complete"=>"Last Stage To Complete",
                         "First Stage To Complete"=>"First Stage To Complete",
