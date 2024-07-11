@@ -1,4 +1,9 @@
 @include("website.includes.header")
+@if(session('message'))
+<div class="alert alert-success" id="notification">
+    {{session('message')}}
+</div>
+@endif
 <!-- Carousel Start -->
 <div class="container-fluid overflow-hidden px-0">
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
