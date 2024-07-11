@@ -1,5 +1,5 @@
 <x-mail::message>
-    #{{$subject}}<br>
+    # Message Received<br>
     <br>
 
     <x-mail::panel>
